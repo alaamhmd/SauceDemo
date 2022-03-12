@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MyTestSuite1" verbose="2" parallel="methods" thread-count="1">
+
+
+    <test name="Regression" parallel="false" verbose="2">
+        <classes>
+            <class name="tests.TestBase"></class>
+            <class name="tests.LoginWithValidUsernameAndPassword" />
+            <class name="tests.LoginWithInvalidUsernameOrPassword"></class>
+
+
+        </classes>
+    </test>
+</suite>
