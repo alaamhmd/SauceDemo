@@ -5,9 +5,9 @@
 
     <test name="Regression" parallel="false" verbose="2">
         <classes>
-            <class name="tests.TestBase"></class>
+            <class name="tests.TestBase"/>
             <class name="tests.LoginWithValidUsernameAndPassword" />
-            <class name="tests.LoginWithInvalidUsernameOrPassword"></class>
+            <class name="tests.LoginWithInvalidUsernameOrPassword"/>
 
 
         </classes>

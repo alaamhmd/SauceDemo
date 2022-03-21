@@ -16,19 +16,19 @@ public class PageBase {
         PageBase.drvier = driver;
     }
 
-    protected static void clickBtn(By button) {
+    public static void clickBtn(By button) {
         waitForElement(button);
         drvier.findElement(button).click();
 
     }
 
-    protected static void setTextToElement(By textbox, String value) {
+    public static void setTextToElement(By textbox, String value) {
         waitForElement(textbox);
         drvier.findElement(textbox).sendKeys(value);
 
     }
 
-    protected static void clearTextbox(By textbox) {
+    public static void clearTextbox(By textbox) {
         waitForElement(textbox);
         drvier.findElement(textbox).clear();
 
