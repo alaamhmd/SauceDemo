@@ -20,9 +20,9 @@ public class LoginWithValidUsernameAndPassword extends TestBase {
         login = new LoginPage(driver);
         jsonReader = new JSONDataReader();
         softAssert = new SoftAssert();
-       // home = new HomePage(driver);
+        home = new HomePage(driver);
         jsonReader.jsonReader();
-      //  login.login(jsonReader.vUsername, jsonReader.vPassword);
+        login.login(jsonReader.vUsername, jsonReader.vPassword);
         softAssert.assertEquals(jsonReader.homePageURL, getCurrentPageURL());
         softAssert.assertEquals(home.checkElementsStatus(), true);
         softAssert.assertAll();
